@@ -13,6 +13,7 @@ let saveEl = document.getElementById("save-el")
 
 let count  = 0;
 
+
 function increament() {
     count += 1
     countEl.innerHTML = count
@@ -22,6 +23,7 @@ function increament() {
 
 function save( ) {
     let entry = count + " - "
-    console.log(entry)
-    saveEl.innerHTML +=  entry
+    saveEl.innerHTML+=  entry
+    countEl.textContent = 0
+    count = 0
 }
