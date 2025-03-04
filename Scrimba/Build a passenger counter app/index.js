@@ -8,10 +8,20 @@
 // change the count-el in the HTML to reflect the new count
 
 let countEl = document.getElementById("count-el")
+let saveBtn = document.getElementById("save-btn")
+let saveEl = document.getElementById("save-el")
 
 let count  = 0;
 
 function increament() {
-    count = count + 1
+    count += 1
     countEl.innerHTML = count
+}
+
+// create a function, save(), which logs out the count when its called
+
+function save( ) {
+    let entry = count + " - "
+    console.log(entry)
+    saveEl.innerHTML +=  entry
 }
