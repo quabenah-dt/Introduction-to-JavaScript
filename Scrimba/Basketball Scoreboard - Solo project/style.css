@@ -1,0 +1,11 @@
+body {
+    font-family: 'Cursed Timer ULiL';
+    margin: 0;
+    padding: 0;
+    background: hsla(229, 47%, 20%, 1);
+    color: white;
+}
+
+h1, p {
+    margin: 0;
+}
