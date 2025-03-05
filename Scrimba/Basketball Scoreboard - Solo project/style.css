@@ -58,3 +58,21 @@ p {
     background: hsla(224, 44%, 73%, 1);
     color: white;
 }
+
+
+.reset-btn {
+    background: hsla(224, 44%, 73%, 1);
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+   margin-top: 90px;
+   cursor: pointer;
+   transition: .2s;
+}
+
+.reset-btn:active {
+    background: hsl(224, 73%, 65%);
+}
