@@ -14,7 +14,7 @@
 <div class="main-cotainer">
     <div class="home-contaier">
         <h1>HOME</h1>
-        <p id="score-screen">0</p>
+        <p id="home-score-screen">0</p>
         <div class="buttons">
             <button id="home-plus-one" class="addition-btn" onclick="homePlusOne()">+1</button>
             <button id="home-plus-two" class="addition-btn" onclick="homePlusTwo()">+2</button>
@@ -26,11 +26,11 @@
 
     <div class="guest-contaier">
         <h1>GUEST</h1>
-        <p>0</p>
+        <p id="away-score-screen">0</p>
         <div class="buttons">
-            <button class="addition-btn">+1</button>
-            <button class="addition-btn">+2</button>
-            <button class="addition-btn">+3</button>
+            <button class="addition-btn" onclick="awayPlusOne()">+1</button>
+            <button class="addition-btn" onclick="awayPlusTwo()">+2</button>
+            <button class="addition-btn" onclick="awayPlusThree()">+3</button>
         </div>
     </div>
 </div>
