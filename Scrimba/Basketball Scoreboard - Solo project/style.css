@@ -9,3 +9,52 @@ body {
 h1, p {
     margin: 0;
 }
+
+.main-cotainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Verdana;
+    margin-bottom: 21px;
+}
+
+p {
+    font-size: 90px;
+    background: hsla(353, 100%, 2%, 1);
+    text-align: center; /* Center the text inside */
+    width: 155px;
+    height: 120px;
+    padding: 10px; /* Adds space inside the box */
+    box-sizing: border-box; /* Ensures padding doesn’t add to width/height */
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    color: hsla(349, 93%, 64%, 1);
+    margin-bottom: 26px;
+    border-radius: 5px;
+}
+
+.addition-btn {
+    height: 45px;
+    width: 45px;
+    border: 3px solid hsla(224, 44%, 73%, 1);
+    border-radius: 5px;
+    background: hsla(229, 47%, 20%, 1);
+    color: hsla(224, 44%, 73%, 1);
+    font-family:  'Cursed Timer ULiL';
+    cursor: pointer;
+    transition: .2s;
+}
+
+.addition-btn:active {
+    background: hsla(224, 44%, 73%, 1);
+    color: white;
+}
