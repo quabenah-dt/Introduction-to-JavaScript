@@ -26,4 +26,9 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
+}
+
+button:active {
+    background: gold;
 }

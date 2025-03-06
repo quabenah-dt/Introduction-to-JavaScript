@@ -1,9 +1,14 @@
-let firstCard = 10
-let secondCard = 4
+let firstCard = 11
+let secondCard = 11
 let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
 let message = ""
+
+let messageEl = document.getElementById("message-el")
+let cardNumber = document.getElementById("card-number")
+let sumNumber = document.getElementById("sum-number")
+
 
 // 1. Store the message-el paragraph in a variable called messageEl
 
@@ -18,5 +23,7 @@ function startGame() {
         isAlive = false
     }
     // 2. Display the message in the messageEl using messageEl.textContent
-    console.log(message)
+    messageEl.innerText = message
+    cardNumber.innerText = `Cards: ${firstCard}   ${secondCard}`
+    sumNumber.innerText = `Sum: ${sum}`
 }
