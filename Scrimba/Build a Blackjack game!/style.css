@@ -17,7 +17,20 @@ h1 {
     font-style: italic;
 }
 
-button {
+.button-1 {
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.button-2 {
     color: #016f32;
     width: 150px;
     background: goldenrod;
@@ -28,6 +41,7 @@ button {
     border-radius: 2px;
     cursor: pointer;
 }
+
 
 button:active {
     background: gold;
