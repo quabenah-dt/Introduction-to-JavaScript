@@ -1,6 +1,7 @@
-let firstCard = 8
+let firstCard = 10
 let secondCard = 10
 let thirdCard = 3
+let cards = [firstCard, secondCard, thirdCard]
 let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
@@ -29,7 +30,7 @@ function renderGame() {
     }
     // 2. Display the message in the messageEl using messageEl.textContent
     messageEl.innerText = message
-    cardNumber.innerText = `Cards: ${firstCard}   ${secondCard}`
+    cardNumber.innerText = `Cards: ${cards[0]} ${cards[1]}`
     sumNumber.innerText = `Sum: ${sum}`
 
 
@@ -43,13 +44,14 @@ function renderGame() {
 //         sum = sum + thirdCard
 //     }
 
-//     startGame();
+//     renderGame();
 
 //     cardNumber.innerText += ` ${thirdCard}`
 // }
 
 function newCARD() {
-    let card = 6
-    sum += card
+    // let card = 6
+    sum += thirdCard
     renderGame()
+    cardNumber.innerText += ` ${cards[2]}`
 }
