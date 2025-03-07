@@ -14,6 +14,10 @@ let sumNumber = document.getElementById("sum-number")
 // 1. Store the message-el paragraph in a variable called messageEl
 
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
     if (sum <= 20) {
         message = "Do you want to draw a new card? 🙂"
     } else if (sum === 21) {
@@ -33,13 +37,19 @@ function startGame() {
 
 
 
+// function newCARD() {
+//     // let sum = firstCard + secondCard + thirdCard
+//     if ( sum <=20) {
+//         sum = sum + thirdCard
+//     }
+
+//     startGame();
+
+//     cardNumber.innerText += ` ${thirdCard}`
+// }
+
 function newCARD() {
-    // let sum = firstCard + secondCard + thirdCard
-    if ( sum <=20) {
-        sum = sum + thirdCard
-    }
-
-    startGame();
-
-    cardNumber.innerText += ` ${thirdCard}`
+    let card = 6
+    sum += card
+    renderGame()
 }
