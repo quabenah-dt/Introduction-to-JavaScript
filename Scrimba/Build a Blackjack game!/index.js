@@ -1,5 +1,6 @@
-let firstCard = 11
-let secondCard = 11
+let firstCard = 8
+let secondCard = 10
+let thirdCard = 3
 let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
@@ -26,4 +27,19 @@ function startGame() {
     messageEl.innerText = message
     cardNumber.innerText = `Cards: ${firstCard}   ${secondCard}`
     sumNumber.innerText = `Sum: ${sum}`
+
+
+}
+
+
+
+function newCARD() {
+    // let sum = firstCard + secondCard + thirdCard
+    if ( sum <=20) {
+        sum = sum + thirdCard
+    }
+
+    startGame();
+
+    cardNumber.innerText += ` ${thirdCard}`
 }
